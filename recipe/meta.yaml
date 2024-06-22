@@ -28,7 +28,9 @@ requirements:
     - posix  # [win]
     - gnuconfig  # [unix]
     - {{ compiler('c') }}        # [unix]
+    - {{ stdlib('c') }}          # [unix]
     - {{ compiler('m2w64_c') }}  # [win]
+    - {{ stdlib('m2w64_c') }}    # [win]
     - make   # [unix]
   host:
     - xorg-damageproto
